@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movie website</title>
+</head>
+<body>
+
+<h1>Movie List</h1>
+{%for i in movies%}
+	<h3>{{i}}</h3>
+{%endfor%}
+
+<h1>Movie Poster Links</h1>
+{%for i in image%}
+	<a href="{{i}}"/>PosterLink</a><br>
+{%endfor%}
+
+<h1>Movie Summary</h1>
+{%for i in summary%}
+	<h3>{{i}}</h3>
+{%endfor%}
+
+<h2>{{message}}</h2>
+<h2><a href="insert.html">Insert New</a></h2>
+<h2><a href="update.html">Update</a></h2>
+<h2><a href="delete.html">Delete</a></h2>
+<h2><a href="show_data">Display all</a></h2>
+
+ 
+</body>
+</html>
